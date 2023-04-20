@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>How to Gdb | theMinimalCoder</title>
+	<link rel="canonical" href="http://example.org/">
+	<link rel='alternate' type='application/rss+xml' title="theMinimalCoder RSS" href='/index.xml'>
+	<link rel='stylesheet' type='text/css' href='/style.css'>
+	<link rel="icon" href="/favicon.ico">
+	<meta name="description" content="How to C code using GDB GNU Debugger (also known as GDB) is a debugger that allows the user to see &ldquo;what&rsquo;s happening&rdquo; inside a program as it executes.
+GDB can be used to debug programs written in C, C&#43;&#43;, Fortran, and Modula-2.
+\
+Creating a sample code # include &lt;stdio.h&gt; int main() { int i, num, j; printf (&#34;Type a number: &#34;); scanf (&#34;%d&#34;, &amp;num ); for (i=1; i&lt;num; i&#43;&#43;) j=j*i; printf(&#34;%d factor is: %d!">
+	<meta name="keywords" content="C, Debugging, GDB">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<meta charset="utf-8">
+</head>
+<body>
+	<section class="navbar-base">
+	<p class="navbar-title">The<em>Minimal</em>Coder</p>
+	<span class="navbar-links">
+		<a href="http://example.org/" class="navbar-link">homepage</a>	
+		<a href="/aboutme/" class="navbar-link">about me</a>
+	</span>
+</section>
+
+	
+	<article class='main-base'>
+    <h1 id="how-to-c-code-using-gdb">How to C code using GDB</h1>
+<p>GNU Debugger (also known as GDB) is a debugger that allows the user
+to see &ldquo;what&rsquo;s happening&rdquo; inside a program as it executes.<br>
+<br>
+GDB can be used to debug programs written in C, C++, Fortran, and Modula-2.<br>
+\</p>
+<h1 id="creating-a-sample-code">Creating a sample code</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e"># include &lt;stdio.h&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> i, num, j;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span> (<span style="color:#e6db74">&#34;Type a number: &#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">scanf</span> (<span style="color:#e6db74">&#34;%d&#34;</span>, <span style="color:#f92672">&amp;</span>num );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (i<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>; i<span style="color:#f92672">&lt;</span>num; i<span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>                j<span style="color:#f92672">=</span>j<span style="color:#f92672">*</span>i;    
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%d factor is: %d!</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,num,j);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><br>
+The code receives a number from the user through the scanf command and
+calculates its factorial.<br>
+<br>
+However, this code intentionally contains an error (if you know, you know)
+that when the number 6 is entered, the program returns &ldquo;0&rdquo; when it should
+return &ldquo;720&rdquo;.<br>
+\</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#ae81ff">6</span> factor is: <span style="color:#ae81ff">0</span><span style="color:#f92672">!</span>
+</span></span></code></pre></div><p><br>
+Why does this happen? That&rsquo;s what we&rsquo;ll try to find out using GDB!<br>
+\</p>
+<h1 id="step-1---compiling-the-code">Step 1 - Compiling the code</h1>
+<p><br>
+To use GDB in your code, you need to use the &ldquo;-g&rdquo; argument when compiling,
+which allows the compiler to collect information that will be essential for
+the debugging process. (See an example below)<br>
+\</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cc -g factorial.c -o factorial
+</span></span></code></pre></div><p>\</p>
+<h1 id="step-2---initialize-gdb">Step 2 - Initialize GDB</h1>
+<p>Initialize GDB with the code below:\</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ gdb factorial.c
+</span></span></code></pre></div><p><br>
+If you don&rsquo;t have GDB installed on your system, just use the following command:<br>
+\</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo apt install gdb
+</span></span></code></pre></div><p>\</p>
+<h1 id="step-3---setting-a-breakpoint">Step 3 - Setting a &ldquo;breakpoint&rdquo;</h1>
+<p>A breakpoint is basically a signal that will define where your code should
+stop while it is executing, this will prevent your code from skipping over
+the part you want to examine.\</p>
+<p>To set a new breakpoint is simple, just use the &ldquo;break&rdquo; command
+(you can use just &ldquo;b&rdquo; as an abbreviation for &ldquo;break&rdquo;):<br>
+\</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> break line_number
+</span></span></code></pre></div><p><br>
+In our case, since I want to examine the code loop, I will set the
+breakpoint for line 9:<br>
+\</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> break <span style="color:#ae81ff">9</span>
+</span></span><span style="display:flex;"><span>Breakpoint <span style="color:#ae81ff">1</span> at 0x11d3: file factorial.c, line 9.
+</span></span></code></pre></div><p>\</p>
+<h1 id="step-4---running-the-program">Step 4 - Running the program</h1>
+<p>To run the program, use the &ldquo;run [args]&rdquo; command (arguments can be used
+as if you were running the program normally). Since in our case arguments
+are not necessary, I will just use &ldquo;run&rdquo;.<br>
+\</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>run
+</span></span><span style="display:flex;"><span>Starting program: /home/user/folder/factorial
+</span></span></code></pre></div><p><br>
+With the code running it will execute normally until it reaches the first
+breakpoint defined and display the following message:<br>
+\</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Breakpoint 1, main <span style="color:#f92672">()</span> at factorial.c:7
+</span></span><span style="display:flex;"><span>7	    <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>i<span style="color:#f92672">=</span>1; i&lt;num; i++<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p><br>
+And now you will use some commands to debug, as explained in the topics below&hellip;\</p>
+<h1 id="step-5---displaying-variable-values">Step 5 - Displaying variable values</h1>
+<p>To check the value of a variable, just use the &ldquo;print&rdquo; command along
+with the variable name (you can use just &ldquo;p&rdquo; as an abbreviation for &ldquo;print&rdquo;),
+for example:<br>
+\</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> print i
+</span></span><span style="display:flex;"><span>$1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> print j
+</span></span><span style="display:flex;"><span>$2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">3042592</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> print num
+</span></span><span style="display:flex;"><span>$3 <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>
+</span></span></code></pre></div><p><br>
+As you can see, the variable &ldquo;j&rdquo; was not initialized correctly. Therefore,
+it will have a default garbage value, which will result in an unexpected
+value in the factorization.<br>
+<br>
+To fix the problem, simply define the &ldquo;j&rdquo; variable as 1, recompile the
+program, and run it again. The problem seems to be fixed&hellip; but even
+after that, something continues to cause the wrong factorial to be returned.<br>
+<br>
+So&hellip; before I bore everyone to death explaining step by step how to solve
+it, I propose that you apply what you learned from this post and try to
+find out what is wrong with this code on your own. (In the next topic,
+I will explain some extra commands to help you solve the problem)<br>
+<br>
+Extra Commands
+<br>
+Although it is an extra topic, the commands that will be mentioned are just
+as essential as those addressed above.
+<br>
+There are three types of operations you can perform in GDB after the
+program has reached the defined breakpoint. These commands are:
+<br>
+<code>c</code> or <code>continue</code>: The code will continue to execute until it reaches another breakpoint.
+<code>n</code> or <code>next</code>: It will execute a single line of instructions, something like skipping to the next command to be executed.
+<code>s</code> or <code>step</code>: Similar to <code>next</code>, it will execute single instructions but with the difference that functions will not be treated as single instructions, making it execute line by line.
+<code>l</code> or <code>list</code>: This command will display the program source code.
+<code>help</code>: Displays a help screen with some other useful commands.
+<br>
+References<br>
+<br>
+<a href="https://linux.die.net/man/1/gdb">https://linux.die.net/man/1/gdb</a>
+<a href="https://u.osu.edu/cstutorials/2018/09/28/how-to-debug-c-program-using-gdb-in-6-simple-steps/">https://u.osu.edu/cstutorials/2018/09/28/how-to-debug-c-program-using-gdb-in-6-simple-steps/</a></p>
+
+</article>
+	<p><a href="http://example.org/">Return to the main page</a></p>
+	
+	
+<section class="nextprev">
+	<p class="prevart"><em>Previous:<br> not available.</em></p>
+	<a href="/aboutme/"><div class="nextart">Next:<br>Who am&#39;i</div></a>
+</section>
+
+
+	<div style="clear:both" class=taglist>Related<br><a id="tag_c" href="http://example.org/tags/c">C</a> &middot; <a id="tag_debugging" href="http://example.org/tags/debugging">Debugging</a> &middot; <a id="tag_gdb" href="http://example.org/tags/gdb">GDB</a></div>
+
+	<footer class="footer-base">
+	<p class="footer-text">
+	Website created by <a href="https://github.com/Anthhon" target=”_blank”>Anthony Silva</a>
+	</p>
+</footer>
+
+</body>
+</html>

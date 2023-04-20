@@ -2,19 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/aboutme/</loc>
-    <lastmod>2023-04-13T11:09:02-03:00</lastmod>
-  </url><url>
     <loc>http://example.org/homepage/</loc>
     <lastmod>2023-04-13T11:27:09-03:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/documentation/</loc>
-    <lastmod>2023-04-13T11:27:09-03:00</lastmod>
+    <loc>http://example.org/aboutme/</loc>
+    <lastmod>2023-04-13T11:09:02-03:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/c/</loc>
+    <lastmod>2023-04-15T19:32:37-03:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/debugging/</loc>
+    <lastmod>2023-04-15T19:32:37-03:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/gdb/</loc>
+    <lastmod>2023-04-15T19:32:37-03:00</lastmod>
+  </url><url>
+    <loc>http://example.org/using-gdb/</loc>
+    <lastmod>2023-04-15T19:32:37-03:00</lastmod>
   </url><url>
     <loc>http://example.org/tags/</loc>
-    <lastmod>2023-04-13T11:27:09-03:00</lastmod>
+    <lastmod>2023-04-15T19:32:37-03:00</lastmod>
   </url><url>
     <loc>http://example.org/</loc>
+    <lastmod>2023-04-15T19:32:37-03:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/documentation/</loc>
     <lastmod>2023-04-13T11:27:09-03:00</lastmod>
   </url><url>
     <loc>http://example.org/categories/</loc>

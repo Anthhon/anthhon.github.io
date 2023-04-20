@@ -5,35 +5,10 @@
 	<description>Recent content on theMinimalCoder</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
-	<lastBuildDate>Thu, 13 Apr 2023 11:27:09 -0300</lastBuildDate>
+	<lastBuildDate>Sat, 15 Apr 2023 19:32:37 -0300</lastBuildDate>
     
         <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
 	
-	
-	<item>
-		<title>Who am&#39;i</title>
-		<link>http://example.org/aboutme/</link>
-		<pubDate>Thu, 13 Apr 2023 11:09:02 -0300</pubDate>
-		
-		<guid>http://example.org/aboutme/</guid>
-		<description>&lt;h1 id=&#34;hi-im-anthony-silva&#34;&gt;Hi i&amp;rsquo;m &lt;em&gt;Anthony Silva&lt;/em&gt;&lt;/h1&gt;
-&lt;p&gt;I&amp;rsquo;m a 19-year-old Brazilian guy who has been fascinated
-with computers for as long as I can remember. &lt;strong&gt;I&amp;rsquo;m particularly interested in the &amp;ldquo;hardware-close&amp;rdquo;
-software nerdy stuff.&lt;/strong&gt; Lately, I&amp;rsquo;ve been thinking about sharing my knowledge (although I must admit,
-I still have a lot to learn) and I think Github&amp;rsquo;s free hosting website could be a great option.&lt;/p&gt;
-&lt;h2 id=&#34;professional-career-and-passions&#34;&gt;Professional career and &lt;em&gt;passions&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;As for my programming background, I&amp;rsquo;ve been at it for 2 years now and I&amp;rsquo;m always looking for
-ways to expand my knowledge. During this time, &lt;strong&gt;I mostly worked on projects related to management
-systems for small companies.&lt;/strong&gt;&lt;br&gt;
-&lt;br&gt;
-However, &lt;strong&gt;I&amp;rsquo;m also passionate about the low-level side of programming,&lt;/strong&gt;
-and I think that creating technical posts and related content would be an excellent way to share
-what I know and maybe even help someone out. &lt;strong&gt;I consider myself a low-level developer and my go-to
-language is C,&lt;/strong&gt; and recently i&amp;rsquo;m interested about Rust, but I also know a thing or two about front-end
-development, because, let&amp;rsquo;s face it, who doesn&amp;rsquo;t these days? And in case you doesn&amp;rsquo;t already know
-&lt;a href=&#34;https://github.com/Anthhon&#34;&gt;that is my Github profile.&lt;/a&gt; So&amp;hellip; go check it out!&lt;/p&gt;
-</description>
-	</item>
 	
 	<item>
 		<title>About the page</title>
@@ -64,6 +39,161 @@ to have contributors&lt;/strong&gt; to the website.&lt;br&gt;
 &lt;br&gt;
 &lt;strong&gt;At first glance i&amp;rsquo;m probably gonna be doing it like a private project,&lt;/strong&gt; because
 i thinks it&amp;rsquo;s needed to first find the website &amp;ldquo;identity&amp;rdquo; as i would say.&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Who am&#39;i</title>
+		<link>http://example.org/aboutme/</link>
+		<pubDate>Thu, 13 Apr 2023 11:09:02 -0300</pubDate>
+		
+		<guid>http://example.org/aboutme/</guid>
+		<description>&lt;h1 id=&#34;hi-im-anthony-silva&#34;&gt;Hi i&amp;rsquo;m &lt;em&gt;Anthony Silva&lt;/em&gt;&lt;/h1&gt;
+&lt;p&gt;I&amp;rsquo;m a 19-year-old Brazilian guy who has been fascinated
+with computers for as long as I can remember. &lt;strong&gt;I&amp;rsquo;m particularly interested in the &amp;ldquo;hardware-close&amp;rdquo;
+software nerdy stuff.&lt;/strong&gt; Lately, I&amp;rsquo;ve been thinking about sharing my knowledge (although I must admit,
+I still have a lot to learn) and I think Github&amp;rsquo;s free hosting website could be a great option.&lt;/p&gt;
+&lt;h2 id=&#34;professional-career-and-passions&#34;&gt;Professional career and &lt;em&gt;passions&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;As for my programming background, I&amp;rsquo;ve been at it for 2 years now and I&amp;rsquo;m always looking for
+ways to expand my knowledge. During this time, &lt;strong&gt;I mostly worked on projects related to management
+systems for small companies.&lt;/strong&gt;&lt;br&gt;
+&lt;br&gt;
+However, &lt;strong&gt;I&amp;rsquo;m also passionate about the low-level side of programming,&lt;/strong&gt;
+and I think that creating technical posts and related content would be an excellent way to share
+what I know and maybe even help someone out. &lt;strong&gt;I consider myself a low-level developer and my go-to
+language is C,&lt;/strong&gt; and recently i&amp;rsquo;m interested about Rust, but I also know a thing or two about front-end
+development, because, let&amp;rsquo;s face it, who doesn&amp;rsquo;t these days? And in case you doesn&amp;rsquo;t already know
+&lt;a href=&#34;https://github.com/Anthhon&#34;&gt;that is my Github profile.&lt;/a&gt; So&amp;hellip; go check it out!&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>How to gdb</title>
+		<link>http://example.org/using-gdb/</link>
+		<pubDate>Sat, 15 Apr 2023 19:32:37 -0300</pubDate>
+		
+		<guid>http://example.org/using-gdb/</guid>
+		<description>&lt;h1 id=&#34;how-to-c-code-using-gdb&#34;&gt;How to C code using GDB&lt;/h1&gt;
+&lt;p&gt;GNU Debugger (also known as GDB) is a debugger that allows the user
+to see &amp;ldquo;what&amp;rsquo;s happening&amp;rdquo; inside a program as it executes.&lt;br&gt;
+&lt;br&gt;
+GDB can be used to debug programs written in C, C++, Fortran, and Modula-2.&lt;br&gt;
+\&lt;/p&gt;
+&lt;h1 id=&#34;creating-a-sample-code&#34;&gt;Creating a sample code&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i, num, j;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;printf&lt;/span&gt; (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Type a number: &amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;scanf&lt;/span&gt; (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;num );
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; i&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;num; i&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                j&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;j&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;i;    
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;printf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;%d factor is: %d!&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;,num,j);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;br&gt;
+The code receives a number from the user through the scanf command and
+calculates its factorial.&lt;br&gt;
+&lt;br&gt;
+However, this code intentionally contains an error (if you know, you know)
+that when the number 6 is entered, the program returns &amp;ldquo;0&amp;rdquo; when it should
+return &amp;ldquo;720&amp;rdquo;.&lt;br&gt;
+\&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; factor is: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;br&gt;
+Why does this happen? That&amp;rsquo;s what we&amp;rsquo;ll try to find out using GDB!&lt;br&gt;
+\&lt;/p&gt;
+&lt;h1 id=&#34;step-1---compiling-the-code&#34;&gt;Step 1 - Compiling the code&lt;/h1&gt;
+&lt;p&gt;&lt;br&gt;
+To use GDB in your code, you need to use the &amp;ldquo;-g&amp;rdquo; argument when compiling,
+which allows the compiler to collect information that will be essential for
+the debugging process. (See an example below)&lt;br&gt;
+\&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ cc -g factorial.c -o factorial
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;\&lt;/p&gt;
+&lt;h1 id=&#34;step-2---initialize-gdb&#34;&gt;Step 2 - Initialize GDB&lt;/h1&gt;
+&lt;p&gt;Initialize GDB with the code below:\&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ gdb factorial.c
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;br&gt;
+If you don&amp;rsquo;t have GDB installed on your system, just use the following command:&lt;br&gt;
+\&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ sudo apt install gdb
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;\&lt;/p&gt;
+&lt;h1 id=&#34;step-3---setting-a-breakpoint&#34;&gt;Step 3 - Setting a &amp;ldquo;breakpoint&amp;rdquo;&lt;/h1&gt;
+&lt;p&gt;A breakpoint is basically a signal that will define where your code should
+stop while it is executing, this will prevent your code from skipping over
+the part you want to examine.\&lt;/p&gt;
+&lt;p&gt;To set a new breakpoint is simple, just use the &amp;ldquo;break&amp;rdquo; command
+(you can use just &amp;ldquo;b&amp;rdquo; as an abbreviation for &amp;ldquo;break&amp;rdquo;):&lt;br&gt;
+\&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;gdb&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; break line_number
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;br&gt;
+In our case, since I want to examine the code loop, I will set the
+breakpoint for line 9:&lt;br&gt;
+\&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;gdb&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; break &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Breakpoint &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; at 0x11d3: file factorial.c, line 9.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;\&lt;/p&gt;
+&lt;h1 id=&#34;step-4---running-the-program&#34;&gt;Step 4 - Running the program&lt;/h1&gt;
+&lt;p&gt;To run the program, use the &amp;ldquo;run [args]&amp;rdquo; command (arguments can be used
+as if you were running the program normally). Since in our case arguments
+are not necessary, I will just use &amp;ldquo;run&amp;rdquo;.&lt;br&gt;
+\&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;run
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Starting program: /home/user/folder/factorial
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;br&gt;
+With the code running it will execute normally until it reaches the first
+breakpoint defined and display the following message:&lt;br&gt;
+\&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Breakpoint 1, main &lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; at factorial.c:7
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;7	    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;1; i&amp;lt;num; i++&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;br&gt;
+And now you will use some commands to debug, as explained in the topics below&amp;hellip;\&lt;/p&gt;
+&lt;h1 id=&#34;step-5---displaying-variable-values&#34;&gt;Step 5 - Displaying variable values&lt;/h1&gt;
+&lt;p&gt;To check the value of a variable, just use the &amp;ldquo;print&amp;rdquo; command along
+with the variable name (you can use just &amp;ldquo;p&amp;rdquo; as an abbreviation for &amp;ldquo;print&amp;rdquo;),
+for example:&lt;br&gt;
+\&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;gdb&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; print i
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;gdb&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; print j
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3042592&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;gdb&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; print num
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$3 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;br&gt;
+As you can see, the variable &amp;ldquo;j&amp;rdquo; was not initialized correctly. Therefore,
+it will have a default garbage value, which will result in an unexpected
+value in the factorization.&lt;br&gt;
+&lt;br&gt;
+To fix the problem, simply define the &amp;ldquo;j&amp;rdquo; variable as 1, recompile the
+program, and run it again. The problem seems to be fixed&amp;hellip; but even
+after that, something continues to cause the wrong factorial to be returned.&lt;br&gt;
+&lt;br&gt;
+So&amp;hellip; before I bore everyone to death explaining step by step how to solve
+it, I propose that you apply what you learned from this post and try to
+find out what is wrong with this code on your own. (In the next topic,
+I will explain some extra commands to help you solve the problem)&lt;br&gt;
+&lt;br&gt;
+Extra Commands
+&lt;br&gt;
+Although it is an extra topic, the commands that will be mentioned are just
+as essential as those addressed above.
+&lt;br&gt;
+There are three types of operations you can perform in GDB after the
+program has reached the defined breakpoint. These commands are:
+&lt;br&gt;
+&lt;code&gt;c&lt;/code&gt; or &lt;code&gt;continue&lt;/code&gt;: The code will continue to execute until it reaches another breakpoint.
+&lt;code&gt;n&lt;/code&gt; or &lt;code&gt;next&lt;/code&gt;: It will execute a single line of instructions, something like skipping to the next command to be executed.
+&lt;code&gt;s&lt;/code&gt; or &lt;code&gt;step&lt;/code&gt;: Similar to &lt;code&gt;next&lt;/code&gt;, it will execute single instructions but with the difference that functions will not be treated as single instructions, making it execute line by line.
+&lt;code&gt;l&lt;/code&gt; or &lt;code&gt;list&lt;/code&gt;: This command will display the program source code.
+&lt;code&gt;help&lt;/code&gt;: Displays a help screen with some other useful commands.
+&lt;br&gt;
+References&lt;br&gt;
+&lt;br&gt;
+&lt;a href=&#34;https://linux.die.net/man/1/gdb&#34;&gt;https://linux.die.net/man/1/gdb&lt;/a&gt;
+&lt;a href=&#34;https://u.osu.edu/cstutorials/2018/09/28/how-to-debug-c-program-using-gdb-in-6-simple-steps/&#34;&gt;https://u.osu.edu/cstutorials/2018/09/28/how-to-debug-c-program-using-gdb-in-6-simple-steps/&lt;/a&gt;&lt;/p&gt;
 </description>
 	</item>
 	
