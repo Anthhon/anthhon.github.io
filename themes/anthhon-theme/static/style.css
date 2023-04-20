@@ -1,0 +1,245 @@
+/* Website fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+/* Color variables */
+
+:root {
+    --main-color: #232323;
+    --second-color: #3e3e3e;
+    --third-color: #2e2e2e;
+
+    --main-white: #f1f1f1;
+    --second-white: #f2f2f2;
+    --third-white: #ffffffb0;
+
+    --main-colored: #f7ff00;
+    --second-colored: #fff789;
+
+    --shadow-color: #02020235;
+    --shadow-second-color: #02020220;
+    --shadow-third-color: #02020250;
+
+    --main-transparent: #13131385;
+}
+
+/* Generic CSS
+ * Changing anything here can mess up everything
+ * be careful */
+*{
+	padding: 0;
+	margin: 0;
+
+	user-select: none;
+	transition: all 0.25s ease 0s;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	height: 100%;
+	width: 100%;
+
+	margin: 0;
+	padding: 0;
+	padding-top: 6.5vw;
+	text-align: center;
+
+	color: var(--main-white);
+	background-color: var(--main-color);
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+main {
+	max-width: 800px ;
+	margin: auto ;
+}
+
+
+a{
+	opacity: 85%;
+	text-decoration: none;
+	color: var(--main-colored);
+}
+a:hover{
+	opacity: 100%;
+	text-decoration: underline;
+}
+
+h1{
+	font-size: 52px;
+	font-weight: 300;
+}
+
+h2{
+	font-size: 38px;
+	font-weight: 300;
+}
+
+h3, h4, h5, h6{
+	font-size: 32px;
+}
+
+p{
+	font-size: 18px
+}
+
+strong{
+	background: none;
+	font-weight: 500;
+	color: var(--main-white);
+	text-decoration: underline var(--main-colored);
+}
+
+em{
+	font-style: normal;
+	color: var(--main-colored);
+}
+
+@media (max-width: 1000px) {
+	body{
+		padding: 0;
+	}
+	article{
+		padding: 2vw;
+	}
+	h1{
+		font-size: 32px;
+	}
+	h2{
+		font-size: 24px;
+	}
+	h3, h4, h5, h6{
+		font-size: 20;
+	}
+
+	p{
+		font-size: 16px;
+	}
+}
+
+/* Navbar section */
+
+.navbar-base{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	backdrop-filter: blur(6px);
+
+	padding: 10px 50px;
+	margin-bottom: 1vw;
+
+	color: var(--main-white);
+	background-color: var(--main-transparent);
+}
+
+.navbar-title{
+	font-size: 32px;
+	font-weight: 300;
+}
+
+.navbar-link{
+	font-size: 24px;
+	padding: 0 0 0 2vw;
+}
+
+@media (max-width: 1000px) {
+	.navbar-base{
+		flex-direction: column;
+		justify-content: center;
+
+		position: static;
+		padding: 20px 0;
+	}
+	.navbar-link{
+		padding: 0 2vw;
+	}
+}
+
+/* Main section */
+.main-base{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.main-text, .main-base > p{
+	width: 30vw;
+	margin: 20px;
+	padding: 12px 36px;
+	
+	text-align: left;
+
+	border-radius: 10px;
+	color: var(--main-white);
+	background-color: var(--third-color);
+}
+
+.main-text:hover{
+	padding: 12px 28px;
+}
+
+@media (max-width: 1000px) {
+	.main-text, .main-base > p{
+		width: 60vw;
+	}
+}
+
+/* Footer section */
+
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 10px 50px;
+	margin-top: 2.5vw;
+
+	color: var(--main-white);
+	background-color: var(--main-transparent);
+}
+
+/* Previous and next button section */
+
+.nextprev {
+	display: flex;
+	justify-content: space-evenly;
+}
+.prevart {
+	text-align: left;
+}
+.nextart {
+	text-align: right;
+}
+.nextart,.prevart {
+}
+
+@media (max-width: 1000px) {
+	.nextprev{
+		margin: 20px 0;
+	}
+}
+
+/* Down-here isn't OC */
+
+img {
+	max-width: 100% ;
+}
+
+header h1 {
+	text-align: center ;
+}
+
+/* For TAGLIST.HTML */
+.taglist {
+	text-align: center ;
+	clear: both ;
+}
+
+/* For NEXTPREV.HTML */

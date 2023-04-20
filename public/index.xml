@@ -1,0 +1,71 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+	<title>theMinimalCoder</title>
+	<link>http://example.org/</link>
+	<description>Recent content on theMinimalCoder</description>
+	<generator>Hugo -- gohugo.io</generator>
+	<language>en-us</language>
+	<lastBuildDate>Thu, 13 Apr 2023 11:27:09 -0300</lastBuildDate>
+    
+        <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	
+	
+	<item>
+		<title>Who am&#39;i</title>
+		<link>http://example.org/aboutme/</link>
+		<pubDate>Thu, 13 Apr 2023 11:09:02 -0300</pubDate>
+		
+		<guid>http://example.org/aboutme/</guid>
+		<description>&lt;h1 id=&#34;hi-im-anthony-silva&#34;&gt;Hi i&amp;rsquo;m &lt;em&gt;Anthony Silva&lt;/em&gt;&lt;/h1&gt;
+&lt;p&gt;I&amp;rsquo;m a 19-year-old Brazilian guy who has been fascinated
+with computers for as long as I can remember. &lt;strong&gt;I&amp;rsquo;m particularly interested in the &amp;ldquo;hardware-close&amp;rdquo;
+software nerdy stuff.&lt;/strong&gt; Lately, I&amp;rsquo;ve been thinking about sharing my knowledge (although I must admit,
+I still have a lot to learn) and I think Github&amp;rsquo;s free hosting website could be a great option.&lt;/p&gt;
+&lt;h2 id=&#34;professional-career-and-passions&#34;&gt;Professional career and &lt;em&gt;passions&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;As for my programming background, I&amp;rsquo;ve been at it for 2 years now and I&amp;rsquo;m always looking for
+ways to expand my knowledge. During this time, &lt;strong&gt;I mostly worked on projects related to management
+systems for small companies.&lt;/strong&gt;&lt;br&gt;
+&lt;br&gt;
+However, &lt;strong&gt;I&amp;rsquo;m also passionate about the low-level side of programming,&lt;/strong&gt;
+and I think that creating technical posts and related content would be an excellent way to share
+what I know and maybe even help someone out. &lt;strong&gt;I consider myself a low-level developer and my go-to
+language is C,&lt;/strong&gt; and recently i&amp;rsquo;m interested about Rust, but I also know a thing or two about front-end
+development, because, let&amp;rsquo;s face it, who doesn&amp;rsquo;t these days? And in case you doesn&amp;rsquo;t already know
+&lt;a href=&#34;https://github.com/Anthhon&#34;&gt;that is my Github profile.&lt;/a&gt; So&amp;hellip; go check it out!&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>About the page</title>
+		<link>http://example.org/homepage/</link>
+		<pubDate>Thu, 13 Apr 2023 11:27:09 -0300</pubDate>
+		
+		<guid>http://example.org/homepage/</guid>
+		<description>&lt;h1 id=&#34;what-is-theminimalcoder&#34;&gt;What is The&lt;em&gt;Minimal&lt;/em&gt;Coder?&lt;/h1&gt;
+&lt;p&gt;First of all, this page was created with the aim of addressing
+the problem of internet &amp;ldquo;bloat&amp;rdquo;. If you are a regular internet user,
+&lt;strong&gt;you have probably noticed that many websites promise to provide certain
+information or services but end up being cluttered with links and ads.&lt;/strong&gt;&lt;br&gt;
+&lt;br&gt;
+This can be frustrating, which is why I decided to do my part and create a
+website that provides a clutter-free experience.&lt;br&gt;
+&lt;br&gt;
+On this website, &lt;strong&gt;I will write articles not only about technical low-level
+content, but also about random topics that are related to the message I
+want to convey to the world.&lt;/strong&gt; If this website gains a large following, I
+may consider moving it to a separate domain. However, for the time being,
+we are sticking with what we have.&lt;br&gt;
+&lt;br&gt;
+If you want to know more about me, &lt;a href=&#34;http://example.org/aboutme/&#34;&gt;click here.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;is-this-project-going-to-be-open-source&#34;&gt;Is this project going to be &lt;em&gt;open source?&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;If you really want to write you own article, or maybe even improve something about the
+code, you can indeed make a push request and &lt;strong&gt;would be a pleasure
+to have contributors&lt;/strong&gt; to the website.&lt;br&gt;
+&lt;br&gt;
+&lt;strong&gt;At first glance i&amp;rsquo;m probably gonna be doing it like a private project,&lt;/strong&gt; because
+i thinks it&amp;rsquo;s needed to first find the website &amp;ldquo;identity&amp;rdquo; as i would say.&lt;/p&gt;
+</description>
+	</item>
+	
+	</channel>
+</rss>

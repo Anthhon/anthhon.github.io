@@ -1,0 +1,16 @@
+{{ if and .Prev .Next }}
+<section class="nextprev">
+	<a href="{{ .Prev.RelPermalink}}"><div class="prevart">Previous:<br>{{.Prev.Title}}</div></a>
+	<a href="{{ .Next.RelPermalink}}"><div class="nextart">Next:<br>{{.Next.Title}}</div></a>
+</section>
+{{ else if .Prev }}
+<section class="nextprev">
+	<a href="{{ .Prev.RelPermalink}}"><div class="prevart">Previous:<br>{{.Prev.Title}}</div></a>
+	<p class="nextart"><em>Next:<br> not available.</em></p>
+</section>
+{{ else if .Next }}
+<section class="nextprev">
+	<p class="prevart"><em>Previous:<br> not available.</em></p>
+	<a href="{{ .Next.RelPermalink}}"><div class="nextart">Next:<br>{{.Next.Title}}</div></a>
+</section>
+{{ end }}

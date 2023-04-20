@@ -1,0 +1,3 @@
+[submodule "themes/anthhon-theme"]
+	path = themes/anthhon-theme
+	url = https://github.com/Anthhon/anthhon-hugo-theme
