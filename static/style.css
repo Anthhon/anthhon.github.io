@@ -92,9 +92,15 @@ strong{
 	text-decoration: underline var(--main-colored);
 }
 
-em{
+em, p > code{
 	font-style: normal;
 	color: var(--main-colored);
+}
+
+pre{
+	padding: 16px 24px;
+	border-radius: 10px;
+	margin: 20px;
 }
 
 @media (max-width: 1000px) {

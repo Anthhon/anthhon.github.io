@@ -97,6 +97,12 @@ em{
 	color: var(--main-colored);
 }
 
+pre{
+	padding: 16px;
+	border-radius: 10px;
+	margin: 20px;
+}
+
 @media (max-width: 1000px) {
 	body{
 		padding: 0;
